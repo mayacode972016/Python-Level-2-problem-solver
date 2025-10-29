@@ -1,0 +1,40 @@
+# main.py
+#ask user to enter their name
+name  = input("Enter your name ")
+
+#print out user's name
+print("this is the name you entered:")
+for i in range(len(name)):
+  print(name[i])
+
+#print every other letter in user's name
+print("printing every-other letter of your name:")
+for i in range(0,len(name),2):
+  print( name[i])
+
+#print user's name backwards  
+print("now showing your name backwards:")
+for i in range(len(name)-1,-1,-1):
+  print(name[i])
+
+#print user's name using while loop
+print("now printing your name using another loop")
+i=0
+while i<len(name):
+  print(name[i])
+  i+=1
+#now printing user's name backwards using a while loop
+print("now typing every-other letter of your name")  
+i=0
+while i<len(name):
+  print(name[i])
+  i+=2
+
+
+i=0
+while i<len(name):
+  print(name[i])
+  i+=-1
+
+
+  
