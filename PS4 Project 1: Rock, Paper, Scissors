@@ -1,0 +1,29 @@
+# main.py
+#players input their "tool" 
+player1 = input("Enter rock ,paper, or scissors: ")
+player2 = input("Enter rock, paper, or scissors: ")
+
+#possible choices for player 1 to win
+if player1 == "rock" and player2 == "scissors":#with rock
+  print("player 1 wins!")
+
+if player1 == "paper" and player2 == "rock":#with paper
+  print("player 1 wins!Try again player 2.")
+
+if player1 == "scissors" and player2 == "paper":#with scissors
+  print("player 2 loses!player 1 wins!")
+
+
+#possible choices for player 2 to win
+if player2 == "rock" and player1 == "scissors":#with rock
+  print("player 2 wins!")
+
+if player2 == "paper" and player1 == "rock":#with paper
+  print("player 2 wins!Try again player 1.")
+
+if player2 == "scissors" and player1 == "paper":#with scissors
+  print("player 1 loses!player 2 wins!")
+  
+# if (at least) one player doesn't enter rock, paper, or scissors, print... 
+else :
+  print("You lose!One of you didn't enter rock,paper,or scissors")
