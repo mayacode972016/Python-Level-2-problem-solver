@@ -1,0 +1,22 @@
+# main.py
+#ask user for message to encrypt
+Message = input("Type in a secret message ")
+# message for final project
+Message_2 = ""
+
+#  convert message to ASCII value w/cipher(s)
+for i in range (len(Message)) :
+  num = ord(Message[i])
+  Message_2+= str(num) + " "
+# print final message
+print(Message_2)
+# Type input statements
+Message_3 = input("Type in another secret message ")
+Key = input ("Type in a key you want to use ")
+# Make variable for second message
+newMessage = ""
+
+for i in range(len(Message_3)) :
+  num = ord(Message_3[i])
+  newMessage+= str(num) + " "
+print(newMessage)
