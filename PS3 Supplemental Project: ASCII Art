@@ -1,0 +1,7 @@
+# main.py
+
+Size = input("Enter the size of the box ")
+
+
+for i in range(int(Size)):
+  print('#' * int(Size))
