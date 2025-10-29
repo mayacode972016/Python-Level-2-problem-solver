@@ -1,0 +1,9 @@
+# Make input statement that contains users capital word
+Capital = input("Enter a word(all CAPS) ")
+
+#Make capital word lowercase
+finalstring=''
+for i in range(len(Capital)): #Loop through Capital
+  lowerascii = ord(Capital[i])+32
+  finalstring+=chr(lowerascii)
+print(finalstring )
