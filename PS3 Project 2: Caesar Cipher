@@ -1,0 +1,35 @@
+# main.py
+# user inputs message for encryption
+Message = input("Enter a message to encrypt :")
+# user inputs key
+Key = int(input("Type in the key you want to use :"))
+# final message (variable)
+Message_2 = ""
+
+# encrypt/convert message
+for i in range(len(Message)):
+  num = ord(Message[i]) +Key
+  while num > ord('z'):
+    num-=26
+  Message_2+= chr(num)
+print(Message_2) # print encrypted message
+
+# make 2nd final variable  
+newMessage_2 = ""  
+# input for decryption message
+newMessage = input("NOW,Enter a message to decrypt:")
+# input for Key
+Key2 = int(input("Type in your decryption key "))
+ 
+for i in range (len(newMessage)):
+  num = ord(newMessage[i]) -Key2
+  while num < ord('a') :
+    num+=26
+  newMessage_2+= chr(num)
+print(newMessage_2) 
+  
+
+
+
+
+
