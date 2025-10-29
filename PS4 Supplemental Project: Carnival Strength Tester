@@ -1,0 +1,18 @@
+ # main.py
+puck=input('How high will your puck fly?(in inches)')
+  
+if int(puck)<20 :
+  print('Aww!Too bad,you hit too low you lose. :(')
+elif int(puck)<25 :
+  print('You won a water-gun & balloon animal(:! Would you like to play again?[press Run to continue]')
+
+elif int(puck)<50 :
+  print('You won a stuffed animal! Would you like to play again?[press Run to continue]')
+elif int(puck)<75 :
+  print('You won 50 bucks & a lollipop!! Would you like to play again?[press Run to continue]')
+elif int(puck)<100 :
+  print('You won cotton candy,a slushy,and a snow cone machine!!! Would you like to play again?[press Run to continue]')
+elif int(puck)>200 :
+  print('Aww!Too bad,the tester is broken. :([press Run to continue,and fix the tester.]')
+elif int(puck)<200 :
+  print('Aww!Too bad,the tester is broken.[press Run to continue,and fix the tester.] :(')
