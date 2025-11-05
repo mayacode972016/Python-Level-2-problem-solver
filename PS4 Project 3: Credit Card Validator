@@ -1,0 +1,8 @@
+ main.py
+Credit_num = input("Enter a credit card number : ")
+
+Total = 0
+for i in range (len(Credit_num)):
+  Credit_num[]
+
+
