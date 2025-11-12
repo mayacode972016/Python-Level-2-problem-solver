@@ -1,8 +1,13 @@
- main.py
+# main.py
 Credit_num = input("Enter a credit card number : ")
 
 Total = 0
 for i in range (len(Credit_num)):
-  Credit_num[]
+  Total += int(Credit_num[i])
+print("The total number of the digits in your number is " + str(Total))
 
+Times = 0
+for i in range (len(Credit_num)):
+  if i % 2 == 0 :
+   Times += int(Credit_num[i])*2
 
