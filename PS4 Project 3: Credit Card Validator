@@ -10,4 +10,12 @@ Times = 0
 for i in range (len(Credit_num)):
   if i % 2 == 0 :
    Times += int(Credit_num[i])*2
+  else:
+    Times+=int(Credit_num[i])
+print("The sum of every digit multiplied/times two of your number is " + str(Times))
+
+if Times % 10 == 0 :
+  print("Great! Your credit card number is valid!")
+else:
+  print("Sorry card invalid!" )
 
