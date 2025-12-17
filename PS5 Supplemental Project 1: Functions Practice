@@ -1,0 +1,27 @@
+#add 2 numbers
+def add(one,two):
+  return one+two
+
+print(add(1,2))
+
+def minus(one,two):
+  return one-two
+
+print(minus(104,28))
+
+def times(one,two,three):
+  return one*two*three
+
+print(times(34,6,2))
+
+def middle(one,two):
+  return (one+two)/2
+
+print(middle(38,45))
+
+def factorial(one):
+number=
+for i in range(1,one+1):
+
+
+print(factorial(1,2))
