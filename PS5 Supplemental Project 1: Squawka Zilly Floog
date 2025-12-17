@@ -1,0 +1,13 @@
+#zilly
+def zilly(x):
+  return x*2+1
+print(zilly(8))
+#floog
+def floog(x):
+  return x*x - 6*x + 12
+print(floog(4))
+#squawka
+def squawka(x):
+  return 2*zilly(x) + 3*floog(x)
+
+print(squawka(6))
