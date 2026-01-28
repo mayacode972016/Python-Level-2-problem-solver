@@ -1,0 +1,25 @@
+import random 
+
+
+def flipCoin():
+
+  flipped = random.randint(0,1)
+
+  if flipped == 0 :
+    return "heads"
+
+  else:
+    return "tails"
+
+heads = 0
+tails = 0
+for i in range(1000):
+  headsORtails = flipCoin()
+  if headsORtails == "heads" :
+   heads+=1
+  else:
+    tails+=1
+hpercents=(heads/1000)*100
+print(str(hpercents) + '%' + ' of your flips were heads')
+tpercents=(tails/1000)*100
+print(str(tpercents) + '%' + ' of your flips were tails')
