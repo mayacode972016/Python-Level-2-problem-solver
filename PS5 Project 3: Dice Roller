@@ -1,0 +1,52 @@
+import random
+
+def diceRoll():
+
+  roll = random.randint(1,6)
+
+  return roll
+
+numtwos = 0 
+numthrees = 0
+numfours = 0
+numfives = 0
+numsixes = 0
+numsevens = 0
+numeights = 0
+numnines = 0
+numtens = 0
+numelevens = 0
+numtwelves = 0
+for i in range(1000):
+  rollNum = diceRoll() + diceRoll()
+  if rollNum == 2:
+    numtwos+=1
+  elif rollNum ==3:
+    numthrees+=1
+  elif rollNum == 4:
+    numfours+=1
+  elif rollNum == 5:
+    numfives+=1
+  elif rollNum == 6:
+    numsixes+=1
+  elif rollNum == 7:
+    numsevens+=1
+  elif rollNum == 8:
+    numeights+=1
+  elif rollNum == 9:
+    numnines+=1
+  elif rollNum == 10:
+    numtens+=1
+  elif rollNum == 11:
+    numelevens+=1
+  elif rollNum == 12:
+    numtwelves+=1
+
+twopercents=(numtwos/1000)*100
+print(str(twopercents) + '%' + ' of your rolls were 2')
+threepercents=(numthrees/1000)*100
+print(str(threepercents) + '%' + ' of your rolls were 3')
+fourpercents=(numfours/1000)*100
+print(str(twopercentspercents) + '%' + ' of your rolls were 2')
+threepercents=(numthrees/1000)*100
+print(str(threepercents) + '%' + ' of your rolls were 3')
