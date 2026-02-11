@@ -42,11 +42,36 @@ for i in range(1000):
   elif rollNum == 12:
     numtwelves+=1
 
+#two(2)
 twopercents=(numtwos/1000)*100
 print(str(twopercents) + '%' + ' of your rolls were 2')
+#three(3)
 threepercents=(numthrees/1000)*100
 print(str(threepercents) + '%' + ' of your rolls were 3')
+#four(4)
 fourpercents=(numfours/1000)*100
-print(str(twopercentspercents) + '%' + ' of your rolls were 2')
-threepercents=(numthrees/1000)*100
-print(str(threepercents) + '%' + ' of your rolls were 3')
+print(str(fourpercents) + '%' + ' of your rolls were 4')
+#five(5)
+fivepercents=(numfives/1000)*100
+print(str(fivepercents) + '%' + ' of your rolls were 5')
+#six(6)
+sixpercents=(numsixes/1000)*100
+print(str(sixpercents) + '%' + ' of your rolls were 6')
+#seven(7)
+sevenpercents=(numsevens/1000)*100
+print(str(sevenpercents) + '%' + ' of your rolls were 7')
+#eight(8)
+eightpercents=(numeights/1000)*100
+print(str(eightpercents) + '%' + ' of your rolls were 8')
+#nine(9)
+ninepercents=(numnines/1000)*100
+print(str(ninepercents) + '%' + ' of your rolls were 9')
+#ten(10)
+tenpercents=(numtens/1000)*100
+print(str(tenpercents) + '%' + ' of your rolls were 10')
+#eleven(11)
+elevenpercents=(numelevens/1000)*100
+print(str(elevenpercents) + '%' + ' of your rolls were 11')
+#twelve(12)
+twelvepercents=(numtwelves/1000)*100
+print(str(twelvepercents) + '%' + ' of your rolls were 12')
