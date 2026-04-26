@@ -1,0 +1,6 @@
+dictionary = {"Volcano": "A mountain that spits magma ash, gases.",
+"Cake": "A cake is a dessert including flour, sugar, eggs, and butter, often baked and sometimes decorated with frosting or toppings. ",
+"River": "A river is a body of water that flows across the land, usually emptying into a sea, lake, or another river.",
+"Dream": "A dream is a series of thoughts, images, and feelings your brain creates while you’re asleep. They can seem very real, and sometimes they’re based on things you did or thought about during the day, mixed together in imaginative ways.",
+"Treasure": "Treasure is something very special or valuable that people want to keep safe. It can be gold or jewels in stories, like a keepsake."}
+print(dictionary)
