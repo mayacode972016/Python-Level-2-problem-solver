@@ -24,7 +24,8 @@ print(factorials)
 word=input("Enter a word:")
 words = { }
 for letter in word:
-  
-
-
-
+  if letter in words:
+    words[letter] += 1
+  else:
+    words[letter] = 1
+print(words)
