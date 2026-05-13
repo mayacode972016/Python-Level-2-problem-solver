@@ -1,0 +1,29 @@
+candies = {
+    "Snickers: ": 15,
+    "Almond Joy: ": 7,
+    "Twix: ": 6,
+    "Kit Kat: ": 9,
+    "Reese's Cups: ": 3,
+    "Butterfingers: ": 2
+    }
+
+print("A count of each of my candies:")
+
+for candy in candies:
+    print(str(candy) + str(candies[candy]))
+
+# Updating candy counts
+candies["Snickers: "] = 14
+candies["Almond Joy: "] = 6
+candies["Twix: "] = 0
+candies["Kit Kat: "] = 8
+candies["Reese's Cups: "] = 2
+candies["Butterfingers: "] = 1
+
+# Adding a new candy
+candies["Junior Mints"] = 4
+
+print("\nAn updated count of each of my candies:")
+
+for candy in candies:
+       print(candy + ": " + str(candies[candy]))
