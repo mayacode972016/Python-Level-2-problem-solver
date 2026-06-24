@@ -1,0 +1,32 @@
+FCB = {"Suarez": "Uruguay", 
+"Messi": "Argentina",
+"Coutinho": "Brazil",
+"Vidal": "Chile",
+"Rakitic": "Croatia",
+"Busquets": "Spain",
+"Roberto": "Spain",
+"Pique": "Spain",
+"Lenglet":"France",
+"Alba": "Spain",
+"Pedri": "Spain",
+"Gavi": "Spain",
+"Ansu Fati": "Spain",
+"Frenkie de Jong": "Netherlands",
+"Ronald Araujo": "Uruguay",
+"Jules Kounde": "France",
+"Andreas Christensen": "Denmark",
+"Robert Lewandowski": "Poland",
+"Raphinha": "Brazil",
+"Marc-Andre ter Stegen": "Germany",
+"Inaki Pena": "Spain",
+"Ferran Torres": "Spain",
+"Dani Olmo": "Spain",
+"Lamine Yamal": "Spain",}
+
+countries = set(FCB.values())
+
+print("FC Barcelona has various players from " + str(len(countries)) + " different countries.")
+print("FCB's players come from...")
+
+for country in countries:
+    print(country)
