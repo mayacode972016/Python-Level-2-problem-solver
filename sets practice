@@ -1,0 +1,44 @@
+import random
+
+a = set()
+b = set()
+
+while len(a) < 5:
+  a.add(random.randint(1,10))
+
+while len(b) < 5:
+  b.add(random.randint(1,10))
+ 
+print(a)
+print(b)
+print(a.union(b))
+print(a.intersection(b))
+
+if 1 in b:
+  print("The number 1 is inside the second set")
+else:
+  print("The number 1 is not inside the second set")
+
+word1 = input("Enter in any word:")
+letters1 = set(word1)
+print(letters1,len(letters1))
+
+word2 = input("Enter another word to find the common letters of the two words:")
+letters2 = set(word2)
+
+
+print(letters1.intersection(letters2))
+
+def getevens(nums):
+  evens = set()
+  for num in nums:
+    if num % 2 == 0:
+      evens.append(num)
+  return evens
+
+def pickThrees (words):
+  threeLetterWords = set()
+  for word in words:
+    if len(word) == 3:
+      threeLetterWords.append
+  return threeLetterWords
