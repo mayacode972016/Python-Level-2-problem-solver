@@ -1,0 +1,15 @@
+word = "programming"
+guessedLetters = set()
+numGuessesRemaining = 15
+# fill up set with the correct letters
+correctLetters = set()
+for letter in correctWord:
+  correctLetters.add(letter)
+
+while numGuessesRemaining > 0:
+  state = " "
+  for correctLetter in word:
+    if correctLetter in guessedLetters:
+      state+=correctLetter
+
+
