@@ -1,0 +1,35 @@
+biology = ["Sarah", "Ahmed", "Fred", "Gillian", "Shradah", "Max", "Max", "Sara", "Max", "Esther"]
+
+computerScience = ["Sarah", "John", "Fred", "Gillian", "Jermaine", "Max", "Sara", "Juan", "Esther"]
+
+english = ["Nico", "Sharjeel", "Isabella", "Taylor", "Ali", "Ali", "Jean-Baptiste", "Jean-Baptiste", "Jean-Baptiste", "William"]
+
+bio = set(biology)
+comp_sci = set(computerScience)
+eng = set(english)
+
+print("Biology actually has " + str(len(bio)) + " students enrolled.")
+print("Computer Science actually has " + str(len(comp_sci)) + " students enrolled.")
+print("English actually has " + str(len(eng)) + " students enrolled.")
+
+def waitlist(classList):
+    enrolled = []
+    waitlisted = set()
+
+    for student in classList:
+        if student in enrolled:
+            continue
+        elif len(enrolled) < 6:
+            enrolled.append(student)
+        else:
+            waitlisted.add(student)
+
+    return waitlisted
+
+print("Waitlisted for Biology:", waitlist(biology))
+print("Waitlisted for Computer Science:", waitlist(computerScience))
+print("Waitlisted for English:", waitlist(english))
+
+
+
+
