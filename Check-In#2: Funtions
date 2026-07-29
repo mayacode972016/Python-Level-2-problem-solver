@@ -1,0 +1,17 @@
+import random
+
+def multiply(num1,num2):
+  return num1 * num2
+print(multiply(43,25))
+
+lotto = random.randint(0,1)
+
+prizeMoney = random.randint(1,1000)
+
+def lottery(lotto,prizeMoney):
+  if lotto == 1:
+    return ("you won $" + str(prizeMoney) + "$ dollars!")
+  else:
+    return("You can finally stop planning how to spend your millions and focus on planning what we're having for dinner.")
+print("welcome to...THE LOTTERY!")
+print(lottery(lotto,prizeMoney))
