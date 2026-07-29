@@ -1,0 +1,9 @@
+players = {"LeBron": 23, "Ramos": 4, "Ronaldo": 7}
+var = players["LeBron"]
+print(var)
+players["Modric"] = 14
+if "Curry" in players:
+  print("Yep, Steph is included!")
+else:
+  print("Oh no! Adding him now!")
+
