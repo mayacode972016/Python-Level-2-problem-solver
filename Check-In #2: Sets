@@ -1,0 +1,29 @@
+recipe_1 = set()
+recipe_1.add("flour")
+recipe_1.add("eggs")
+recipe_1.add("milk")
+print(recipe_1)
+recipe_1.remove("eggs")
+print(recipe_1)
+
+recipe_2 = set()
+recipe_2.add("baking soda")
+recipe_2.add("pancake mix")
+recipe_2.add("milk")
+
+ingredients = recipe_1.union(recipe_2)
+print(ingredients)
+
+common = recipe_1.intersection(recipe_2)
+print(common)
+
+if "garlic" in common:
+  print("Garlic is in both recipes")
+elif "garlic" in recipe_1 or "garlic" in recipe_2:
+  print("Garlic is in one recipe")
+else:
+  print("Garlic is in neither recipes")
+
+fruits = "banana"
+letters = set(fruits)
+print(letters)
