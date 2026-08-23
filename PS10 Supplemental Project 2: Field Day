@@ -1,0 +1,47 @@
+# 1. Create two empty lists for the teams.
+
+# 2. Repeat the following steps 10 times.
+
+# 3. Ask the student for their name.
+
+# 4. Ask the student which team(s) they want to join.
+
+# 5. Add the student to the appropriate team(s).
+
+# 6. Print the kickball team roster.
+
+# 7. Print the capture the flag team roster.
+
+# 8. End the program.
+
+
+kickball = []
+capture_the_flag = []
+
+for i in range(10):
+    name = input("Enter your name: ")
+
+    print("Would you like to play kickball, capture the flag, both, or neither?")
+    print("?")
+    print("Enter '1' for kickball")
+    print("Enter '2' for capture the flag")
+    print("Enter '3' for both")
+    print("Enter '4' for neither")
+
+    choice = input("Your choice: ")
+
+    if choice == "1":
+        kickball.append(name)
+    elif choice == "2":
+        capture_the_flag.append(name)
+    elif choice == "3":
+        kickball.append(name)
+        capture_the_flag.append(name)
+
+print("Kickball team roster:")
+for name in kickball:
+    print(name)
+
+print("Capture the flag roster:")
+for name in capture_the_flag:
+    print(name)
