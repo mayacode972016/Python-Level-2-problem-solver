@@ -1,0 +1,25 @@
+# print welcome message
+# make an empty task list
+# repeat forever
+# ask the user for input on to-do's
+# if user input "1" ask for task name & ad to list
+# if user input "2", ask for to-do num & remove from list
+# if user input 3, break whiletrue loop
+# print updated list
+
+print("welcome to, to-do list!")
+tasks = []
+
+while True :
+  choice = input("What would you like to do with your todo list? \n 1. Add a task \n 2. Remove a task \n 3. Exit \nType in the number here: ")
+  if choice == "1" :
+    task1 = input("type in the task you'd like to add:")
+    tasks.append(task1)
+  elif choice == "2":
+    removeTask = input("type in the number of the task you would liked to remove")
+    tasks.remove(tasks[int(removeTask)-1])
+  elif choice == "3":
+    break
+  print("here is your updated list:")
+  for i in range(len(tasks)):
+    print(str(i+1) + "." + tasks[i])
