@@ -1,0 +1,12 @@
+# print intro
+# ask for username then password(check if they match in dictionary)
+# if matched print home page input statement else try again
+# if user picked 1, ask how much to deposit
+# if user picked 2, ask how much to withdraw
+# if user picked 3, ask for old password(check if old password in dictionary)
+# if matched ask for new password else print password incorrect and go back to home screen
+# if user picked 4, go back to log in page(step 2)
+
+account = {"cashycat421":"Meowney124","bankbaddie375":"cashQueen573"}
+
+balance ={"cashycat421":0,"bankbaddie375":0}
