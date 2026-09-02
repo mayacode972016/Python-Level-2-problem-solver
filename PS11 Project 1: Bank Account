@@ -10,3 +10,16 @@
 account = {"cashycat421":"Meowney124","bankbaddie375":"cashQueen573"}
 
 balance ={"cashycat421":0,"bankbaddie375":0}
+
+while True:
+  while True:
+    print("Welcome to the bank!Please log in.")
+    username = input("Please enter your username and password username:")
+    password = input("password:")
+    if username in account:
+      if password == account[username]:
+        break
+      else:
+        print("Sorry,your username and password do not match")
+    else:
+      print("Sorry,your username and password do not match")
