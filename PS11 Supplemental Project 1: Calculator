@@ -1,0 +1,138 @@
+# START
+
+# Create functions for:
+#     - addition
+#     - subtraction
+#     - multiplication
+#     - division
+#     - modulus
+#     - factorial
+#     - exponent
+
+# Display the calculator welcome message and available operations
+
+# REPEAT:
+#     Ask the user which operation they want
+
+#     IF the operation is factorial:
+#         Ask for one number
+#         Perform the factorial
+#         Display the result
+
+#     OTHERWISE:
+#         Ask for two numbers
+#         Perform the selected operation
+#         Display the result
+
+#     Ask if the user wants to perform another operation
+
+# UNTIL the user chooses no
+
+# END
+
+# *start code
+
+import math
+
+# Create the addition function.
+def addition(num1, num2):
+    return num1 + num2
+
+
+# Create the subtraction function.
+def subtraction(num1, num2):
+    return num1 - num2
+
+
+# Create the multiplication function.
+def multiplication(num1, num2):
+    return num1 * num2
+
+
+# Create the division function.
+def division(num1, num2):
+    return num1 / num2
+
+
+# Create the modulus function.
+def modulus(num1, num2):
+    return num1 % num2
+
+
+# Create the factorial function.
+def factorial(num):
+    return math.factorial(num)
+
+
+# Create the exponent function.
+def exponent(num1, num2):
+    return num1 ** num2
+
+
+# Show the calculator information.
+print("Welcome to the Python Calculator. These are the operations we offer:")
+print(":")
+print("Addition: +")
+print("Subtraction: -")
+print("Multiplication: *")
+print("Division: /")
+print("Modulus: %")
+print("Factorial: !")
+print("Exponent: ^")
+
+
+# Keep the calculator running.
+while True:
+
+    # Get the operation from the user.
+    operator = input(
+        "Please enter the operator of the function you would like to use: "
+    )
+
+    # Factorial only needs one number.
+    if operator == "!":
+        num1 = int(input("Number: "))
+        result = factorial(num1)
+        print("Result:", result)
+
+    # All other operations need two numbers.
+    else:
+        num1 = float(input("Number 1: "))
+        num2 = float(input("Number 2: "))
+
+        # Choose the correct calculation.
+        if operator == "+":
+            result = addition(num1, num2)
+
+        elif operator == "-":
+            result = subtraction(num1, num2)
+
+        elif operator == "*":
+            result = multiplication(num1, num2)
+
+        elif operator == "/":
+            result = division(num1, num2)
+
+        elif operator == "%":
+            result = modulus(num1, num2)
+
+        elif operator == "^":
+            result = exponent(num1, num2)
+
+        # Handle an unknown operation.
+        else:
+            print("Invalid operator!")
+            continue
+
+        # Show the answer.
+        print("Result:", result)
+
+    # Ask whether the user wants to continue.
+    again = input(
+        "Would you like to perform another operation? "
+        "Enter 'Y' for yes or 'N' for no: "
+    )
+
+    # Stop when the user chooses no.
+    if again.upper() == "N":
+        break
