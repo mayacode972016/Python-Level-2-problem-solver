@@ -1,0 +1,64 @@
+# Store each ride and its wait/riding time
+ridesDict = {
+'Tower of Turtles': 90,
+'String Mountain': 130,
+'Debug Track': 5,
+'Concatenation Carousel': 100,
+'Cinderella Casting': 90,
+'Magic For Loop': 10,
+'Pythons of the Carribean': 30,
+}
+
+# Set the starting time
+remainingMinutes = 360
+
+# Keep track of the rides visited
+ridesVisited = []
+
+# Welcome the user
+print("Welcome to Juni World! We have a large selection of rides for you to ride!")
+print("We'll even help you keep track of how much time you have left in the park after each ride!")
+
+# Keep asking for rides while there is enough time
+while remainingMinutes > 15:
+
+    # Show the remaining time
+    print("Here's how much time you have left in Juni World:")
+    print("Remaining hours:", remainingMinutes // 60)
+    print("Remaining minutes:", remainingMinutes % 60)
+
+    # Show the available rides
+    print("Here are the rides and their wait times:")
+    for ride in ridesDict:
+        print(ride + ":", ridesDict[ride], "minutes")
+
+    # Ask the user which ride they want
+    rideChoice = input("Enter the ride you wish to go on next: ")
+
+    # Check if the ride exists
+    if rideChoice in ridesDict:
+
+        # Make sure there is enough time for the ride
+        if remainingMinutes - ridesDict[rideChoice] >= 0:
+
+            # Subtract the ride time
+            remainingMinutes -= ridesDict[rideChoice]
+
+            # Add the ride to the list
+            ridesVisited.append(rideChoice)
+
+            print("That was awesome! You rode the", rideChoice)
+
+        else:
+            print("You don't have enough time for that ride!")
+
+    else:
+        print("That ride doesn't exist. Please choose a ride from the list.")
+
+# Print the final list of rides
+print("Wow! That was a great day. Here's a list of all the rides you visited today, in order:")
+
+for ride in ridesVisited:
+    print(ride)
+
+print(Thanks for visiting Juni World! Come back again soon!")
