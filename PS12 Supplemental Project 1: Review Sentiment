@@ -1,0 +1,93 @@
+posWords = [
+    "good",
+    "great",
+    "excellent",
+    "awesome",
+    "beautiful",
+    "amazing",
+    "glad",
+    "joy",
+    "happy",
+    "positive",
+    "cool",
+    "fantastic",
+    "wonderful",
+    "fun",
+    "funny",
+    "love",
+    "lovely",
+    "perfect",
+    "brilliant",
+    "terrific",
+    "superb",
+    "enjoyable",
+    "interesting",
+    "exciting",
+    "helpful",
+    "impressive",
+    "favorite",
+    "cheerful",
+    "pleasant",
+    "delightful",
+    "entertaining",
+]
+
+negWords = [
+    "bad",
+    "mediocre",
+    "poor",
+    "lousy",
+    "sad",
+    "unacceptable",
+    "awful",
+    "negative",
+    "inferior",
+    "lame",
+    "disappointing",
+    "terrible",
+    "horrible",
+    "boring",
+    "hate",
+    "worst",
+    "weak",
+    "annoying",
+    "confusing",
+    "unpleasant",
+    "frustrating",
+    "ridiculous",
+    "useless",
+    "messy",
+    "slow",
+    "weird",
+    "poorly",
+    "dull",
+    "terrifying",
+    "forgettable",
+]
+
+review = input("Enter your review here: ")
+
+words = review.split()
+
+posCount = 0
+negCount = 0
+
+for word in words:
+    word = word.lower().strip(".,!?")
+
+    if word in posWords:
+        posCount += 1
+
+    if word in negWords:
+        negCount += 1
+
+posPercent = posCount / len(words) * 100
+
+negPercent = negCount / len(words) * 100
+
+print("The review has", posPercent, "percent positive words and", negPercent, "percent negative words.")
+
+if posPercent > negPercent:
+    print("I've detected that this review is mostly positive!")
+else:
+    print("I've detected that this review is mostly negative!")
