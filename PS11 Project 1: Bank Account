@@ -9,7 +9,7 @@
 
 account = {"cashycat421":"Meowney124","bankbaddie375":"cashQueen573"}
 
-balance ={"cashycat421":0,"bankbaddie375":0}
+balances = {"cashycat421":0,"bankbaddie375":0}
 
 while True:
   while True:
@@ -23,3 +23,37 @@ while True:
         print("Sorry,your username and password do not match")
     else:
       print("Sorry,your username and password do not match")
+  while True:
+
+    choice = input(
+        "\nWelcome "
+        + username
+        + "! You currently have $"
+        + str(balances[username])
+        + " in your account. What would you like to do?\n\t1. Make a deposit\n\t2. Make a withdrawal\n\t3. Change your password\n\t4. Log out\n")
+ 
+    if choice == "1":
+        deposit = input("How much would you like to deposit? ")
+        balances[username] += int(deposit)
+    elif choice == "2":
+        withdraw = input("How much would you like to withdraw? ")
+        balances[username] -= int(withdraw)
+
+    elif choice == "3":
+        old_password = input(
+            "To change your password, please type in your old password:")
+
+        if old_password == accounts[username]:
+            new_password = input("Please type in your new password:")
+            accounts[username] = new_password
+
+            print("\nYour password has been changed successfully!")
+        else:
+            print("\nYour old password does not match the password in our records.")
+    elif choice == "4":
+      break
+
+
+
+
+
