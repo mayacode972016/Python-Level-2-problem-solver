@@ -1,0 +1,34 @@
+import time
+import random
+
+#print intro and press enter
+# add in countdown
+# print out typing sentence
+sentences = [
+
+    "Peter Piper picked a peck of pickled peppers",
+
+    "She sells seashells by the sea shore",
+
+    "How much wood could a woodchuck chuck if a woodchuck could chuck wood?",
+
+    "If a dog chews shoes, whose shoes does he choose?",
+
+    "If you notice this notice, you will notice that this notice is not worth noticing",
+
+    "I saw Susie sitting in a shoe shine shop"]
+
+input("Welcome to Type Racer. Press Enter to play.")
+print("Ready....")
+time.sleep(2)
+print("Set....")
+time.sleep(2)
+print("Type!")
+start_time = time.time()
+sentence = sentences[random.randint(0, 5)]
+attempt = input(sentence)
+while attempt != sentence :
+  print("Oops. Sorry, thats wrong. Try again.")
+  attempt = input(sentence)
+end_time = time.time()
+print("Great job! Your time was " + str(end_time - start_time) + "!")
